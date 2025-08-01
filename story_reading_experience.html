@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Future of Remote Collaboration - BlogCraft Pro</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Exploring how distributed teams are revolutionizing the way we work together, one virtual meeting at a time." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fblogcraft7909back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background font-body text-text-primary">
+    <!-- Reading Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1 bg-surface z-50">
+        <div class="h-full bg-accent transition-all duration-300" style="width: 25%"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-soft sticky top-1 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10 9 11 1.09-.21 2.28-.71 3.33-1.36C16.67 25.64 18.56 24.22 20 22.5c1.44-1.72 2-3.5 2-5.5V7l-10-5z"/>
+                            <path d="M8 11h8M8 15h6"/>
+                        </svg>
+                        <span class="font-headline font-bold text-xl text-primary">BlogCraft Pro</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="writer_dashboard.html" class="text-text-secondary hover:text-primary transition-quick font-medium">Writer's Studio</a>
+                    <a href="story_reading_experience.html" class="text-primary font-medium">Discover</a>
+                    <a href="user_profile_pages.html" class="text-text-secondary hover:text-primary transition-quick font-medium">Community</a>
+                    <a href="learning_center.html" class="text-text-secondary hover:text-primary transition-quick font-medium">Learn</a>
+                </div>
+
+                <!-- Auth & Actions -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="p-2 text-text-secondary hover:text-primary transition-quick" title="Dark Mode">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                        </svg>
+                    </button>
+                    <button class="text-text-secondary hover:text-primary transition-quick font-medium">Sign In</button>
+                    <button class="bg-accent hover:bg-accent-600 text-white px-4 py-2 rounded-lg font-medium transition-quick">Start Writing</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid lg:grid-cols-4 gap-8">
+            <!-- Article Content -->
+            <article class="lg:col-span-3">
+                <!-- Article Header -->
+                <header class="mb-8">
+                    <div class="mb-6">
+                        <span class="inline-block px-3 py-1 bg-primary-50 text-primary text-sm font-medium rounded-full mb-4">Technology</span>
+                        <h1 class="font-headline text-3xl lg:text-5xl font-bold text-primary leading-tight mb-6">
+                            The Future of Remote Collaboration: How Distributed Teams Are Reshaping Work
+                        </h1>
+                    </div>
+
+                    <!-- Author Info -->
+                    <div class="flex items-center justify-between flex-wrap gap-4 pb-6 border-b border-border-light">
+                        <div class="flex items-center space-x-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Marcus Rodriguez" class="w-12 h-12 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'; this.onerror=null;" />
+                            <div>
+                                <div class="flex items-center space-x-3">
+                                    <a href="user_profile_pages.html" class="font-semibold text-primary hover:text-accent transition-quick">Marcus Rodriguez</a>
+                                    <button class="bg-accent hover:bg-accent-600 text-white px-3 py-1 rounded-full text-sm font-medium transition-quick">Follow</button>
+                                </div>
+                                <div class="flex items-center space-x-4 text-sm text-text-secondary mt-1">
+                                    <span>Tech Writer</span>
+                                    <span>•</span>
+                                    <span>July 28, 2025</span>
+                                    <span>•</span>
+                                    <span>8 min read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Actions -->
+                        <div class="flex items-center space-x-3">
+                            <button class="flex items-center space-x-2 text-text-secondary hover:text-error transition-quick">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                </svg>
+                                <span class="text-sm">234</span>
+                            </button>
+                            <button class="flex items-center space-x-2 text-text-secondary hover:text-primary transition-quick">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                                <span class="text-sm">42</span>
+                            </button>
+                            <button class="p-2 text-text-secondary hover:text-primary transition-quick" title="Share">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Featured Image -->
+                <div class="aspect-video rounded-xl overflow-hidden mb-8">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2940&auto=format&fit=crop" alt="Remote team collaboration" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                </div>
+
+                <!-- Article Content -->
+                <div class="prose prose-lg max-w-none">
+                    <div class="text-lg leading-relaxed space-y-6 text-text-primary" style="line-height: 1.7;">
+                        <p class="text-xl text-text-secondary font-medium mb-8">
+                            The traditional office is becoming a relic of the past. As we navigate through 2025, distributed teams are not just surviving—they're thriving, innovating, and redefining what it means to work together.
+                        </p>
+
+                        <p>
+                            The shift to remote work, accelerated by global events, has evolved from a temporary solution to a permanent transformation. Companies that once insisted on physical presence are now discovering that their most productive teams might never share the same zip code, let alone the same building.
+                        </p>
+
+                        <p>
+                            But this isn't just about working from home. It's about <strong>reimagining collaboration itself</strong>. The tools, processes, and mindsets that made in-person teams successful don't always translate to distributed environments. Instead, we're seeing the emergence of entirely new frameworks for how humans create together.
+                        </p>
+
+                        <!-- Inline Social Share -->
+                        <div class="flex items-center justify-center py-6 my-8 border-t border-b border-border-light">
+                            <div class="flex items-center space-x-4">
+                                <span class="text-sm text-text-secondary">Share this insight:</span>
+                                <button class="flex items-center space-x-2 bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-700 transition-quick">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                    </svg>
+                                    <span class="text-sm">Tweet</span>
+                                </button>
+                                <button class="flex items-center space-x-2 bg-accent text-white px-4 py-2 rounded-lg hover:bg-accent-600 transition-quick">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                    <span class="text-sm">Share</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <h2 class="font-headline text-2xl font-semibold text-primary mt-8 mb-4">The New Rules of Digital Collaboration</h2>
+
+                        <p>
+                            Traditional collaboration relied heavily on synchronous communication—meetings, hallway conversations, and the ability to tap someone on the shoulder. Remote teams have discovered that <em>asynchronous collaboration</em> can be far more powerful when done right.
+                        </p>
+
+                        <p>
+                            Consider how documentation has evolved. In physical offices, knowledge often lived in people's heads or in scattered conversations. Remote teams have been forced to externalize their thinking, creating comprehensive wikis, detailed project briefs, and transparent decision-making processes that benefit everyone.
+                        </p>
+
+                        <blockquote class="border-l-4 border-accent pl-6 py-4 my-8 bg-accent-50 rounded-r-lg">
+                            <p class="text-lg italic text-text-primary mb-2">
+                                "The best remote teams don't try to replicate the office experience—they create something entirely new and often superior."
+                            </p>
+                            <cite class="text-sm text-text-secondary">— Sarah Chen, Remote Work Researcher</cite>
+                        </blockquote>
+
+                        <h2 class="font-headline text-2xl font-semibold text-primary mt-8 mb-4">Technology as the Great Equalizer</h2>
+
+                        <p>
+                            The tools powering remote collaboration have matured dramatically. We've moved beyond basic video calls to sophisticated platforms that support everything from virtual whiteboarding to immersive 3D workspaces. But the real innovation isn't in the technology itself—it's in how teams are using these tools to create new forms of creative partnership.
+                        </p>
+
+                        <p>
+                            AI-powered meeting summaries ensure no one misses important decisions. Collaborative documents allow real-time editing across time zones. Project management tools provide transparency that was impossible in traditional office settings. The result? Many remote teams report higher productivity and better work-life integration than their office-bound counterparts.
+                        </p>
+
+                        <!-- Reader Notes Feature -->
+                        <div class="bg-primary-50 border border-primary-200 rounded-lg p-6 my-8">
+                            <div class="flex items-center space-x-3 mb-4">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                                </svg>
+                                <h3 class="font-semibold text-primary">Reader Notes</h3>
+                            </div>
+                            <p class="text-text-secondary text-sm mb-4">
+                                Highlight text and add private notes that sync across all your devices. Your annotations are private and help you remember key insights.
+                            </p>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-700 transition-quick">
+                                Enable Reader Notes
+                            </button>
+                        </div>
+
+                        <h2 class="font-headline text-2xl font-semibold text-primary mt-8 mb-4">The Human Element Remains Central</h2>
+
+                        <p>
+                            Despite all the technological advancement, successful remote collaboration still comes down to fundamentally human elements: trust, communication, and shared purpose. The most effective distributed teams invest heavily in relationship-building, even when team members may never meet in person.
+                        </p>
+
+                        <p>
+                            Virtual coffee chats, online team-building activities, and regular one-on-one check-ins have become essential practices. Some companies are experimenting with virtual reality meetups and augmented reality collaboration spaces, but the core principle remains the same: technology should enhance human connection, not replace it.
+                        </p>
+
+                        <p>
+                            As we look toward the future, it's clear that remote collaboration isn't just a temporary adaptation—it's a fundamental shift in how we think about work, creativity, and human potential. The teams that master these new ways of working together won't just survive in the distributed future; they'll define it.
+                        </p>
+
+                        <div class="bg-surface rounded-lg p-6 mt-8">
+                            <h3 class="font-headline text-lg font-semibold text-primary mb-3">Key Takeaways</h3>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Asynchronous collaboration often outperforms traditional synchronous methods</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Documentation and transparency become competitive advantages</span>
+                                </li>
+                                <li class="flex items-start space-x-2">
+                                    <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span>Human connection remains the foundation of successful remote teams</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article Tags -->
+                <div class="flex flex-wrap gap-2 mt-8 pt-6 border-t border-border-light">
+                    <span class="px-3 py-1 bg-primary-50 text-primary text-sm rounded-full">Remote Work</span>
+                    <span class="px-3 py-1 bg-primary-50 text-primary text-sm rounded-full">Collaboration</span>
+                    <span class="px-3 py-1 bg-primary-50 text-primary text-sm rounded-full">Future of Work</span>
+                    <span class="px-3 py-1 bg-primary-50 text-primary text-sm rounded-full">Technology</span>
+                    <span class="px-3 py-1 bg-primary-50 text-primary text-sm rounded-full">Productivity</span>
+                </div>
+
+                <!-- Comments Section -->
+                <section class="mt-12 pt-8 border-t border-border-light">
+                    <div class="flex items-center justify-between mb-8">
+                        <h2 class="font-headline text-2xl font-semibold text-primary">Discussion (42)</h2>
+                        <div class="flex items-center space-x-4">
+                            <select class="border border-border-light rounded-lg px-3 py-2 text-sm">
+                                <option>Most Recent</option>
+                                <option>Most Liked</option>
+                                <option>Oldest First</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Comment Form -->
+                    <div class="bg-surface rounded-lg p-6 mb-8">
+                        <div class="flex items-start space-x-4">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=150&auto=format&fit=crop" alt="Your avatar" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'; this.onerror=null;" />
+                            <div class="flex-1">
+                                <textarea placeholder="Share your thoughts on remote collaboration..." class="w-full p-4 border border-border-light rounded-lg resize-none focus:ring-2 focus:ring-primary focus:border-transparent" rows="3"></textarea>
+                                <div class="flex items-center justify-between mt-4">
+                                    <div class="flex items-center space-x-4 text-sm text-text-secondary">
+                                        <button class="hover:text-primary transition-quick">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                            </svg>
+                                        </button>
+                                        <button class="hover:text-primary transition-quick">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.586-6.586a2 2 0 00-2.828-2.828z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="bg-accent hover:bg-accent-600 text-white px-6 py-2 rounded-lg font-medium transition-quick">
+                                        Post Comment
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Comments List -->
+                    <div class="space-y-6">
+                        <!-- Comment 1 - Author Response -->
+                        <div class="bg-accent-50 border border-accent-200 rounded-lg p-6">
+                            <div class="flex items-start space-x-4">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Marcus Rodriguez" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <div class="flex items-center space-x-2 mb-2">
+                                        <span class="font-semibold text-primary">Marcus Rodriguez</span>
+                                        <span class="bg-accent text-white text-xs px-2 py-1 rounded-full font-medium">Author</span>
+                                        <span class="text-sm text-text-secondary">2 hours ago</span>
+                                    </div>
+                                    <p class="text-text-primary mb-3">
+                                        Thanks for all the thoughtful comments! I'm particularly interested in hearing about your own experiences with remote collaboration tools. What's working for your teams?
+                                    </p>
+                                    <div class="flex items-center space-x-4 text-sm">
+                                        <button class="flex items-center space-x-1 text-text-secondary hover:text-error transition-quick">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                            </svg>
+                                            <span>18</span>
+                                        </button>
+                                        <button class="text-text-secondary hover:text-primary transition-quick">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 2 -->
+                        <div class="border border-border-light rounded-lg p-6">
+                            <div class="flex items-start space-x-4">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop" alt="Sarah Kim" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <div class="flex items-center space-x-2 mb-2">
+                                        <span class="font-semibold text-primary">Sarah Kim</span>
+                                        <span class="text-sm text-text-secondary">4 hours ago</span>
+                                    </div>
+                                    <p class="text-text-primary mb-3">
+                                        Excellent insights! Our team has been fully remote for 3 years now, and the async documentation point really resonates. We've found that written communication forces us to be more thoughtful and precise.
+                                    </p>
+                                    <div class="flex items-center space-x-4 text-sm">
+                                        <button class="flex items-center space-x-1 text-text-secondary hover:text-error transition-quick">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                            </svg>
+                                            <span>12</span>
+                                        </button>
+                                        <button class="text-text-secondary hover:text-primary transition-quick">Reply</button>
+                                    </div>
+
+                                    <!-- Nested Reply -->
+                                    <div class="mt-4 pl-6 border-l-2 border-border-light">
+                                        <div class="flex items-start space-x-3">
+                                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&auto=format&fit=crop" alt="David Chen" class="w-8 h-8 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'; this.onerror=null;" />
+                                            <div class="flex-1">
+                                                <div class="flex items-center space-x-2 mb-1">
+                                                    <span class="font-medium text-primary text-sm">David Chen</span>
+                                                    <span class="text-xs text-text-secondary">2 hours ago</span>
+                                                </div>
+                                                <p class="text-sm text-text-primary mb-2">
+                                                    @Sarah Kim Absolutely! The forced documentation has been a game-changer for onboarding new team members too.
+                                                </p>
+                                                <div class="flex items-center space-x-3 text-xs">
+                                                    <button class="flex items-center space-x-1 text-text-secondary hover:text-error transition-quick">
+                                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                                                            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                                        </svg>
+                                                        <span>5</span>
+                                                    </button>
+                                                    <button class="text-text-secondary hover:text-primary transition-quick">Reply</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="border border-border-light rounded-lg p-6">
+                            <div class="flex items-start space-x-4">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&auto=format&fit=crop" alt="Alex Thompson" class="w-10 h-10 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <div class="flex items-center space-x-2 mb-2">
+                                        <span class="font-semibold text-primary">Alex Thompson</span>
+                                        <span class="text-sm text-text-secondary">6 hours ago</span>
+                                    </div>
+                                    <p class="text-text-primary mb-3">
+                                        Great article! I'd love to see a follow-up on the challenges of remote collaboration. While there are many benefits, timezone coordination and maintaining company culture can still be tricky.
+                                    </p>
+                                    <div class="flex items-center space-x-4 text-sm">
+                                        <button class="flex items-center space-x-1 text-text-secondary hover:text-error transition-quick">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                            </svg>
+                                            <span>8</span>
+                                        </button>
+                                        <button class="text-text-secondary hover:text-primary transition-quick">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Load More Comments -->
+                    <div class="text-center mt-8">
+                        <button class="text-accent hover:text-accent-600 font-medium transition-quick">
+                            Load More Comments (39 remaining)
+                        </button>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="lg:col-span-1 space-y-8">
+                <!-- Author Bio -->
+                <div class="bg-white border border-border-light rounded-xl p-6">
+                    <div class="text-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Marcus Rodriguez" class="w-16 h-16 rounded-full mx-auto mb-4 object-cover" onerror="this.src='https://images.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'; this.onerror=null;" />
+                        <h3 class="font-headline text-lg font-semibold text-primary mb-1">Marcus Rodriguez</h3>
+                        <p class="text-text-secondary text-sm mb-4">Technology & Innovation Writer</p>
+                        <button class="bg-accent hover:bg-accent-600 text-white px-6 py-2 rounded-lg font-medium transition-quick w-full">
+                            Follow
+                        </button>
+                    </div>
+                    <div class="flex justify-center space-x-6 text-sm border-t border-border-light pt-4">
+                        <div class="text-center">
+                            <div class="font-semibold text-primary">2.4K</div>
+                            <div class="text-text-secondary">Followers</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="font-semibold text-primary">47</div>
+                            <div class="text-text-secondary">Stories</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-text-secondary mt-4 leading-relaxed">
+                        Marcus writes about the intersection of technology and human behavior, with a focus on how digital tools are reshaping the way we work and collaborate.
+                    </p>
+                </div>
+
+                <!-- Recent Posts by Author -->
+                <div class="bg-white border border-border-light rounded-xl p-6">
+                    <h3 class="font-headline text-lg font-semibold text-primary mb-4">More from Marcus</h3>
+                    <div class="space-y-4">
+                        <article class="group">
+                            <h4 class="font-medium text-primary group-hover:text-accent transition-quick mb-1 line-clamp-2">
+                                <a href="story_reading_experience.html">The Psychology of Digital Minimalism in Remote Work</a>
+                            </h4>
+                            <div class="flex items-center text-xs text-text-secondary space-x-2">
+                                <span>July 25, 2025</span>
+                                <span>•</span>
+                                <span>6 min read</span>
+                            </div>
+                        </article>
+                        <article class="group">
+                            <h4 class="font-medium text-primary group-hover:text-accent transition-quick mb-1 line-clamp-2">
+                                <a href="story_reading_experience.html">Building Trust in Virtual Teams: Lessons from 100+ Remote Companies</a>
+                            </h4>
+                            <div class="flex items-center text-xs text-text-secondary space-x-2">
+                                <span>July 20, 2025</span>
+                                <span>•</span>
+                                <span>12 min read</span>
+                            </div>
+                        </article>
+                        <article class="group">
+                            <h4 class="font-medium text-primary group-hover:text-accent transition-quick mb-1 line-clamp-2">
+                                <a href="story_reading_experience.html">The Evolution of Workplace Communication Tools</a>
+                            </h4>
+                            <div class="flex items-center text-xs text-text-secondary space-x-2">
+                                <span>July 15, 2025</span>
+                                <span>•</span>
+                                <span>9 min read</span>
+                            </div>
+                        </article>
+                    </div>
+                    <a href="user_profile_pages.html" class="inline-flex items-center text-accent hover:text-accent-600 font-medium text-sm mt-4 transition-quick">
+                        View All Posts
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Related Articles -->
+                <div class="bg-white border border-border-light rounded-xl p-6">
+                    <h3 class="font-headline text-lg font-semibold text-primary mb-4">Related Stories</h3>
+                    <div class="space-y-6">
+                        <article class="group">
+                            <div class="aspect-video rounded-lg overflow-hidden mb-3">
+                                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=400&auto=format&fit=crop" alt="Related story" class="w-full h-full object-cover group-hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                            </div>
+                            <h4 class="font-medium text-primary group-hover:text-accent transition-quick mb-2 line-clamp-2">
+                                <a href="story_reading_experience.html">How AI is Transforming Team Productivity</a>
+                            </h4>
+                            <div class="flex items-center text-xs text-text-secondary space-x-2 mb-2">
+                                <span>Elena Vasquez</span>
+                                <span>•</span>
+                                <span>5 min read</span>
+                            </div>
+                        </article>
+
+                        <article class="group">
+                            <div class="aspect-video rounded-lg overflow-hidden mb-3">
+                                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=400&auto=format&fit=crop" alt="Related story" class="w-full h-full object-cover group-hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photos/2016/11/29/06/15/plans-1867745_1280.jpg'; this.onerror=null;" />
+                            </div>
+                            <h4 class="font-medium text-primary group-hover:text-accent transition-quick mb-2 line-clamp-2">
+                                <a href="story_reading_experience.html">The Rise of Asynchronous Leadership</a>
+                            </h4>
+                            <div class="flex items-center text-xs text-text-secondary space-x-2 mb-2">
+                                <span>David Kim</span>
+                                <span>•</span>
+                                <span>7 min read</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div class="bg-gradient-to-br from-primary-50 to-accent-50 border border-primary-200 rounded-xl p-6">
+                    <div class="text-center">
+                        <svg class="w-12 h-12 text-accent mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <h3 class="font-headline text-lg font-semibold text-primary mb-2">Stay Updated</h3>
+                        <p class="text-sm text-text-secondary mb-4">Get the latest insights on remote work and collaboration delivered to your inbox.</p>
+                        <div class="space-y-3">
+                            <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 border border-border-light rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" />
+                            <button class="w-full bg-accent hover:bg-accent-600 text-white py-2 rounded-lg font-medium transition-quick">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- What to Read Next -->
+        <section class="mt-16 pt-12 border-t border-border-light">
+            <div class="text-center mb-12">
+                <h2 class="font-headline text-3xl font-bold text-primary mb-4">What to Read Next</h2>
+                <p class="text-lg text-text-secondary">Personalized recommendations based on your reading history</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Recommendation 1 -->
+                <article class="bg-white border border-border-light rounded-xl overflow-hidden hover:shadow-soft-lg transition-smooth">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2940&auto=format&fit=crop" alt="Story cover" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop" alt="Author" class="w-8 h-8 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'; this.onerror=null;" />
+                            <div>
+                                <div class="font-medium text-sm">Elena Vasquez</div>
+                                <div class="text-xs text-text-secondary">Travel Writer</div>
+                            </div>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold mb-2 hover:text-primary transition-quick">
+                            <a href="story_reading_experience.html">Digital Nomads: The New Remote Work Reality</a>
+                        </h3>
+                        <p class="text-text-secondary mb-4 line-clamp-3">How location-independent professionals are redefining work-life balance and creating new economic opportunities...</p>
+                        <div class="flex items-center justify-between text-sm text-text-secondary">
+                            <span>10 min read</span>
+                            <div class="flex items-center space-x-4">
+                                <span class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                    </svg>
+                                    <span>189</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Recommendation 2 -->
+                <article class="bg-white border border-border-light rounded-xl overflow-hidden hover:shadow-soft-lg transition-smooth">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2940&auto=format&fit=crop" alt="Story cover" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pixabay.com/photos/2016/11/29/06/15/plans-1867745_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=150&auto=format&fit=crop" alt="Author" class="w-8 h-8 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'; this.onerror=null;" />
+                            <div>
+                                <div class="font-medium text-sm">David Kim</div>
+                                <div class="text-xs text-text-secondary">Entrepreneur</div>
+                            </div>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold mb-2 hover:text-primary transition-quick">
+                            <a href="story_reading_experience.html">Building Company Culture in a Remote-First World</a>
+                        </h3>
+                        <p class="text-text-secondary mb-4 line-clamp-3">Strategies for maintaining strong team bonds and shared values when your workforce is distributed across the globe...</p>
+                        <div class="flex items-center justify-between text-sm text-text-secondary">
+                            <span>8 min read</span>
+                            <div class="flex items-center space-x-4">
+                                <span class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                    </svg>
+                                    <span>156</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Recommendation 3 -->
+                <article class="bg-white border border-border-light rounded-xl overflow-hidden hover:shadow-soft-lg transition-smooth">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2940&auto=format&fit=crop" alt="Story cover" class="w-full h-full object-cover hover:scale-105 transition-smooth" loading="lazy" onerror="this.src='https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=150&auto=format&fit=crop" alt="Author" class="w-8 h-8 rounded-full object-cover" onerror="this.src='https://images.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png'; this.onerror=null;" />
+                            <div>
+                                <div class="font-medium text-sm">Sarah Chen</div>
+                                <div class="text-xs text-text-secondary">UX Designer</div>
+                            </div>
+                        </div>
+                        <h3 class="font-headline text-xl font-semibold mb-2 hover:text-primary transition-quick">
+                            <a href="story_reading_experience.html">The Art of Asynchronous Design Reviews</a>
+                        </h3>
+                        <p class="text-text-secondary mb-4 line-clamp-3">How design teams are adapting their critique and collaboration processes for remote-first workflows...</p>
+                        <div class="flex items-center justify-between text-sm text-text-secondary">
+                            <span>6 min read</span>
+                            <div class="flex items-center space-x-4">
+                                <span class="flex items-center space-x-1">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                    </svg>
+                                    <span>98</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button -->
+    <div class="fixed bottom-6 right-6 z-40">
+        <div class="flex flex-col space-y-3">
+            <!-- Bookmark -->
+            <button class="bg-white border border-border-light p-3 rounded-full shadow-soft hover:shadow-soft-lg transition-smooth text-text-secondary hover:text-accent" title="Bookmark">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
+                </svg>
+            </button>
+            <!-- Share -->
+            <button class="bg-white border border-border-light p-3 rounded-full shadow-soft hover:shadow-soft-lg transition-smooth text-text-secondary hover:text-primary" title="Share">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                </svg>
+            </button>
+            <!-- Follow Author -->
+            <button class="bg-accent hover:bg-accent-600 text-white p-3 rounded-full shadow-soft hover:shadow-soft-lg transition-smooth" title="Follow Author">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 10 9 11 1.09-.21 2.28-.71 3.33-1.36C16.67 25.64 18.56 24.22 20 22.5c1.44-1.72 2-3.5 2-5.5V7l-10-5z"/>
+                            <path d="M8 11h8M8 15h6"/>
+                        </svg>
+                        <span class="font-headline font-bold text-xl">BlogCraft Pro</span>
+                    </div>
+                    <p class="text-secondary-300 leading-relaxed">
+                        Empowering writers and readers to create meaningful connections through authentic storytelling.
+                    </p>
+                </div>
+
+                <!-- Platform Links -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Platform</h3>
+                    <ul class="space-y-2">
+                        <li><a href="writer_dashboard.html" class="text-secondary-300 hover:text-white transition-quick">Writer's Studio</a></li>
+                        <li><a href="story_reading_experience.html" class="text-secondary-300 hover:text-white transition-quick">Discover Stories</a></li>
+                        <li><a href="user_profile_pages.html" class="text-secondary-300 hover:text-white transition-quick">Community</a></li>
+                        <li><a href="learning_center.html" class="text-secondary-300 hover:text-white transition-quick">Learning Center</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="learning_center.html" class="text-secondary-300 hover:text-white transition-quick">Writing Guides</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-quick">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-quick">Community Guidelines</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-quick">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-quick">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-quick">Twitter</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-quick">LinkedIn</a></li>
+                        <li><a href="javascript:void(0)" class="text-secondary-300 hover:text-white transition-quick">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-700 mt-12 pt-8 text-center">
+                <p class="text-secondary-400">© 2025 BlogCraft Pro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
